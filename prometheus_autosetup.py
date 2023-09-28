@@ -206,7 +206,7 @@ if '3' in install_choices:
     mysql_exporter_version = get_latest_version('prometheus/mysqld_exporter')
 
     # MySQL Exporter Installation
-    print_color(texts[selected_language]['install_start'] % (texts[selected_language]['mysql_exporter'], prometheus_version), "yellow")
+    print_color(texts[selected_language]['install_start'] % (texts[selected_language]['mysql_exporter'], mysql_exporter_version), "yellow")
 
     exporter_user = input(texts[selected_language]['enter_mysql_username'])
     exporter_pass = input(texts[selected_language]['enter_mysql_password'])
