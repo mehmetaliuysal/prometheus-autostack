@@ -211,7 +211,7 @@ if (in_array('3', $install_choices)) {
     execute("sudo useradd --no-create-home --shell /bin/false mysqld_exporter");
     $mysql_exporter_version = getLatestVersion('prometheus/mysqld_exporter');
     // MySQL Exporter Kurulumu
-    echoColor(sprintf($texts[$selected_language]['install_start'],$texts[$selected_language]['mysql_exporter'],$prometheus_version), "yellow");
+    echoColor(sprintf($texts[$selected_language]['install_start'],$texts[$selected_language]['mysql_exporter'],$mysql_exporter_version), "yellow");
 
     echoColor($texts[$selected_language]['enter_mysql_username'], "yellow");
     $exporter_user = trim(fgets(STDIN));
