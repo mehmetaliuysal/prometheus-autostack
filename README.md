@@ -26,6 +26,7 @@ Prometheus-AutoStack: A streamlined tool to automate the deployment and configur
     ```
 
 2. Depending on your language choice:
+
     For Python:
     ```bash
     pip install -r requirements.txt
